@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #F7E600;
+        }
+
+        .card-group {
+            margin: 13px auto auto auto;
+            width: 80%;
+            height: 10%;
+        }
+
+        .card>img {
+            flex-direction: row;
+        }
+
+        .card-body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .talk {
+            width: 200px;
+            height: 120px;
+            border: 1px solid #3A1D1D;
+            background-color: #3A1D1D;
+            position: relative;
+            top: 18px;
+            border-radius: 50%;
+        }
+
+        .talk:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 40%;
+            width: 0;
+            height: 0;
+            border: 20px solid transparent;
+            border-top-color: #3A1D1D;
+            border-bottom: 0;
+            border-left: 0;
+            margin-left: -28px;
+            margin-bottom: -10px;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title {
+            text-align: center;
+            position: relative;
+            bottom: 70px;
+        }
+
+        .title a {
+            text-decoration: none;
+            color: #F7E600;
+            font-size: 37px;
+            font-weight: bold;
+        }
+
+        .member4 {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+<div class="center">
+    <div class="talk"></div>
+</div>
+
+<h1 class="title">
+    <a href="/home">Members</a>
+</h1>
+<div class="card-group">
+    <div class="card">
+        <a href="/members/member/1">
+            <img class="member1" src="img/지연.png" width="340" height="340">
+        </a>
+        <div class="card-body">
+            <h5 class="card-title">KAKA5 조장: 김지연</h5>
+        </div>
+    </div>
+    <div class="card">
+        <a href="/members/member/2">
+            <img class="member2" src="img/시환.png" width="280" height="340">
+        </a>
+
+        <div class="card-body">
+            <h5 class="card-title">KAKA5 조원: 박시환</h5>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <a href="/members/member/3">
+            <img class="member3" src="img/도균.png" width="280" height="340">
+        </a>
+
+        <div class="card-body">
+            <h5 class="card-title">KAKA5 조원: 김도균</h5>
+        </div>
+    </div>
+    <div class="card">
+        <a href="/members/member/4">
+            <img class="member4" src="img/휘웅.png" width="300" height="340">
+        </a>
+        <div class="card-body">
+            <h5 class="card-title">KAKA5 조원: 김휘웅</h5>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

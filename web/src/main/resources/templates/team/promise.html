@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>르탄이와 카톡한 내용 보기</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+        * {
+            font-family: "Gowun Dodum", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        body {
+            background-color: #F7E600;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+
+        .close {
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            text-decoration: none;
+            font-size: 20px;
+
+            margin-top: 12px;
+            margin-right: 26px;
+        }
+
+        img {
+            border: 1px solid black;
+            border-radius: 50%;
+            width: 100px;
+            background-color: white;
+            margin-left: 40px;
+        }
+
+        .q-one {
+            width: 183px;
+            height: 35px;
+            border: 1px solid white;
+            background-color: white;
+            border-radius: 5px;
+            position: relative;
+            left: 160px;
+            bottom: 120px;
+            padding-left: 10px;
+            padding-top: 10px;
+            font-weight: bold;
+        }
+
+        .q-two {
+            width: 105px;
+            height: 35px;
+            border: 1px solid white;
+            background-color: white;
+            border-radius: 5px;
+            position: relative;
+            left: 160px;
+            bottom: 120px;
+            padding-left: 10px;
+            padding-top: 10px;
+            font-weight: bold;
+        }
+
+        .q-one:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            border: 10px solid transparent;
+            border-top-color: white;
+            border-bottom: 0;
+            border-right: 0;
+            margin-left: -10px;
+            margin-bottom: 25px;
+        }
+
+        .rtani {
+            position: relative;
+            bottom: 110px;
+            left: 165px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .question {
+            margin-top: 75px;
+        }
+
+        .a-one {
+            width: 420px;
+            height: 130px;
+            border: 1px solid white;
+            background-color: white;
+            border-radius: 5px;
+            padding-left: 10px;
+            padding-top: 10px;
+            font-weight: bold;
+            position: relative;
+            left: 778px;
+            bottom: 70px;
+        }
+
+        .a-two {
+            width: 305px;
+            height: 55px;
+            border: 1px solid white;
+            background-color: white;
+            border-radius: 5px;
+            padding-left: 10px;
+            padding-top: 10px;
+            font-weight: bold;
+            position: relative;
+            bottom: 70px;
+            left: 893px;
+        }
+
+        .a-one:after {
+            content: '';
+            position: absolute;
+            right: 0;
+            width: 0;
+            height: 0;
+            border: 10px solid transparent;
+            border-top-color: white;
+            border-bottom: 0;
+            border-left: 0;
+            margin-right: -10px;
+            margin-top: -90px;
+        }
+    </style>
+</head>
+
+<body>
+<a class="close" href="/team">❌</a>
+
+<div class="question">
+    <img src="/img/르탄이3.png" alt="르탄이">
+    <p class="rtani">르탄이</p>
+    <p class="q-one">팀 내에서 정한 약속 있어?</p>
+    <p class="q-two">있으면 알려줘!</p>
+</div>
+
+<div class="answer">
+    <p class="a-one">
+        우리 팀의 규칙 알려줄게! <br>
+        1. 소통 잘하기 <br>
+        2. 피드백 요청 시, 확실하게 답변하기 <br>
+        3. 누구 한명이라도 모르는 것이 있다면 짚고 넘어가기 <br>
+        4. 검색했는데도 모르는 부분은 튜터님이나 팀원에게 질문하기
+    </p>
+    <p class="a-two">
+        점심시간은 12시, 저녁시간은 18시이고 <br>
+        회의시간은 9시, 14시, 20시로 이루어져 있어
+    </p>
+</div>
+</body>
+
+</html>

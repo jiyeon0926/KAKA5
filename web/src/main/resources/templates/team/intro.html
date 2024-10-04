@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>르탄이와 카톡한 내용 보기</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+        * {
+            font-family: "Gowun Dodum", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        body {
+            background-color: #F7E600;
+            overflow-x: hidden;
+        }
+
+        .close {
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            text-decoration: none;
+            font-size: 20px;
+
+            margin-top: 12px;
+            margin-right: 26px;
+        }
+
+        img {
+            border: 1px solid black;
+            border-radius: 50%;
+            width: 100px;
+            background-color: white;
+            margin-left: 40px;
+        }
+
+        .q-one {
+            width: 180px;
+            height: 35px;
+            border: 1px solid white;
+            background-color: white;
+            border-radius: 5px;
+            position: relative;
+            left: 160px;
+            bottom: 120px;
+            padding-left: 10px;
+            padding-top: 10px;
+            font-weight: bold;
+        }
+
+        .q-two {
+            width: 225px;
+            height: 35px;
+            border: 1px solid white;
+            background-color: white;
+            border-radius: 5px;
+            position: relative;
+            left: 160px;
+            bottom: 120px;
+            padding-left: 10px;
+            padding-top: 10px;
+            font-weight: bold;
+        }
+
+        .q-one:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            border: 10px solid transparent;
+            border-top-color: white;
+            border-bottom: 0;
+            border-right: 0;
+            margin-left: -10px;
+            margin-bottom: 25px;
+        }
+
+        .rtani {
+            position: relative;
+            bottom: 110px;
+            left: 165px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .question {
+            margin-top: 75px;
+        }
+
+        .a-one {
+            width: 570px;
+            height: 35px;
+            border: 1px solid white;
+            background-color: white;
+            border-radius: 5px;
+            padding-left: 10px;
+            padding-top: 10px;
+            font-weight: bold;
+            position: relative;
+            left: 628px;
+            bottom: 70px;
+        }
+
+        .a-two {
+            width: 598px;
+            height: 78px;
+            border: 1px solid white;
+            background-color: white;
+            border-radius: 5px;
+            padding-left: 10px;
+            padding-top: 10px;
+            font-weight: bold;
+            position: relative;
+            bottom: 70px;
+            left: 600px;
+        }
+
+        .a-one:after {
+            content: '';
+            position: absolute;
+            right: 0;
+            width: 0;
+            height: 0;
+            border: 10px solid transparent;
+            border-top-color: white;
+            border-bottom: 0;
+            border-left: 0;
+            margin-right: -10px;
+            margin-top: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <a class="close" href="/team">❌</a>
+
+    <div class="question">
+        <img src="/img/르탄이.png" alt="르탄이">
+        <p class="rtani">르탄이</p>
+        <p class="q-one">KAKA5는 무슨 뜻이야?</p>
+        <p class="q-two">KAKA5는 어떤 팀인지 알려줘</p>
+    </div>
+
+    <div class="answer">
+        <p class="a-one">
+            카카오 같은 대기업에 입사하자는 마음과 5조의 5를 합쳐서 KAKA5로 지었어!
+        </p>
+        <p class="a-two">
+            우리 팀은 전공자 1명과 비전공자 3명으로 이루어져 있고, <br>
+            대기업 만큼의 규모있는 기업에 입사하고자 하는 마음이 커서 다들 엄청 열심히 하고 있어!! <br>
+            앞으로 우리가 어떻게 성장하는지 기대해줘
+        </p>
+    </div>
+</body>
+
+</html>

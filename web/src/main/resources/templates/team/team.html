@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+        body {
+            background-color: #F7E600;
+        }
+
+        .talk {
+            width: 200px;
+            height: 120px;
+            border: 1px solid #3A1D1D;
+            background-color: #3A1D1D;
+            position: relative;
+            top: 10px;
+            border-radius: 50%;
+        }
+
+        .talk:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 40%;
+            width: 0;
+            height: 0;
+            border: 20px solid transparent;
+            border-top-color: #3A1D1D;
+            border-bottom: 0;
+            border-left: 0;
+            margin-left: -28px;
+            margin-bottom: -10px;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title {
+            text-align: center;
+            position: relative;
+            bottom: 105px;
+        }
+
+        .title a {
+            text-decoration: none;
+            color: #F7E600;
+            font-size: 47px;
+        }
+
+        img {
+            border: 1px solid black;
+            border-radius: 50%;
+            width: 250px;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .imgs,
+        .keyword {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            position: relative;
+            bottom: 35px;
+        }
+
+        .keyword p {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .intro {
+            position: relative;
+            right: 260px;
+        }
+
+        .goal {
+            position: relative;
+            left: 5px;
+        }
+
+        .promise {
+            position: relative;
+            left: 270px;
+        }
+    </style>
+
+    <script>
+        function introTalk() {
+            var result = confirm("르탄이와 톡한 '소개' 내용을 보시겠습니까?");
+
+            if (result) {
+                window.location.href = "/team/intro";
+            } else {
+                window.location.href = "/team";
+            }
+        }
+
+        function goalTalk() {
+            var result = confirm("르탄이와 톡한 '목표' 내용을 보시겠습니까?");
+
+            if (result) {
+                window.location.href = "/team/goal";
+            } else {
+                window.location.href = "/team";
+            }
+        }
+
+        function promiseTalk() {
+            var result = confirm("르탄이와 톡한 '약속' 내용을 보시겠습니까?");
+
+            if (result) {
+                window.location.href = "/team/promise";
+            } else {
+                window.location.href = "/team";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="center">
+        <div class="talk"></div>
+    </div>
+
+    <h1 class="title">
+        <a href="/home">Team</a>
+    </h1>
+
+    <div class="keyword">
+        <p class="intro">소개</p>
+        <p class="goal">목표</p>
+        <p class="promise">약속</p>
+    </div>
+
+    <div class="imgs">
+        <div style="margin-right: 70px;">
+            <img onclick="introTalk()" src="/img/르탄이.png" alt="소개">
+        </div>
+        <div style="margin-right: 70px;">
+            <img onclick="goalTalk()" src="/img/르탄이2.png" alt="목표">
+        </div>
+        <div>
+            <img onclick="promiseTalk()" src="/img/르탄이3.png" alt="공통점">
+        </div>
+    </div>
+</body>
+
+</html>

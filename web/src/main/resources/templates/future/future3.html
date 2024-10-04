@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future</title>
+    <style>
+        body {
+            background-color: #F7E600;
+            overflow: auto;
+            scroll-behavior: smooth
+        }
+
+        .cover:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 10px;
+            border: 20px solid transparent;
+            border-top-color: #3A1D1D;
+            border-bottom: 0;
+            border-left: 0;
+            margin-left: -60px;
+            margin-bottom: 730px;
+        }
+
+
+        .talk {
+            width: 200px;
+            height: 120px;
+            border: 1px solid #3A1D1D;
+            background-color: #3A1D1D;
+            position: relative;
+            top: 10px;
+            border-radius: 50%;
+        }
+
+        .talk:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 40%;
+            width: 0;
+            height: 0;
+            border: 20px solid transparent;
+            border-top-color: #3A1D1D;
+            border-bottom: 0;
+            border-left: 0;
+            margin-left: -28px;
+            margin-bottom: -10px;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+            position: relative;
+            bottom: 75px;
+        }
+
+        h1 a {
+            text-decoration: none;
+            color: #F7E600;
+        }
+
+
+        .title {
+            text-align: center;
+            position: relative;
+            bottom: 105px;
+        }
+
+        .title a {
+            text-decoration: none;
+            color: #F7E600;
+            font-size: 47px;
+        }
+
+        .list p {
+            position: relative;
+            bottom: 80px;
+            padding: 25px;
+            margin-bottom: 2px;
+
+            border: 1px solid black;
+
+            width: 600px;
+            text-align: center;
+
+            font-size: larger;
+            font-weight: bold;
+            background-color: #3A1D1D;
+            color: #F7E600;
+        }
+
+        .list {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        iframe {
+            width: 600px;
+            height: 300px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <div class="talk"></div>
+    </div>
+
+    <h1 class="title">
+        <a href="/home">Future</a>
+    </h1>
+
+    <div class="list">
+
+        <p><a href="/future/1" style="color: inherit; text-decoration: none;">김지연</a></p>
+        <p><a href="/future/2" style="color: inherit; text-decoration: none;">박시환</a></p>
+        <p><a href="/future/3" style="color: inherit; text-decoration: none;"><iframe
+                    src="https://www.youtube.com/embed/4ZzUPhJAGGQ?si=Csf5hJyo12JdlPP9" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></a></p>
+        <p><a href="/future/4" style="color: inherit; text-decoration: none;">김휘웅</a></p>
+    </div>
+</body>
+
+</html>

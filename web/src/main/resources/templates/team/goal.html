@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>르탄이와 카톡한 내용 보기</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+        * {
+            font-family: "Gowun Dodum", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        body {
+            background-color: #F7E600;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+
+        .close {
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            text-decoration: none;
+            font-size: 20px;
+
+            margin-top: 12px;
+            margin-right: 26px;
+        }
+
+        img {
+            border: 1px solid black;
+            border-radius: 50%;
+            width: 100px;
+            background-color: white;
+            margin-left: 40px;
+        }
+
+        .q-one {
+            width: 188px;
+            height: 35px;
+            border: 1px solid white;
+            background-color: white;
+            border-radius: 5px;
+            position: relative;
+            left: 160px;
+            bottom: 120px;
+            padding-left: 10px;
+            padding-top: 10px;
+            font-weight: bold;
+        }
+
+        .q-two {
+            width: 302px;
+            height: 35px;
+            border: 1px solid white;
+            background-color: white;
+            border-radius: 5px;
+            position: relative;
+            left: 160px;
+            bottom: 120px;
+            padding-left: 10px;
+            padding-top: 10px;
+            font-weight: bold;
+        }
+
+        .q-one:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            border: 10px solid transparent;
+            border-top-color: white;
+            border-bottom: 0;
+            border-right: 0;
+            margin-left: -10px;
+            margin-bottom: 25px;
+        }
+
+        .rtani {
+            position: relative;
+            bottom: 110px;
+            left: 165px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .question {
+            margin-top: 75px;
+        }
+
+        .a-one {
+            width: 510px;
+            height: 57px;
+            border: 1px solid white;
+            background-color: white;
+            border-radius: 5px;
+            padding-left: 10px;
+            padding-top: 10px;
+            font-weight: bold;
+            position: relative;
+            left: 688px;
+            bottom: 70px;
+        }
+
+        .a-two {
+            width: 610px;
+            height: 125px;
+            border: 1px solid white;
+            background-color: white;
+            border-radius: 5px;
+            padding-left: 10px;
+            padding-top: 10px;
+            font-weight: bold;
+            position: relative;
+            bottom: 70px;
+            left: 588px;
+        }
+
+        .a-one:after {
+            content: '';
+            position: absolute;
+            right: 0;
+            width: 0;
+            height: 0;
+            border: 10px solid transparent;
+            border-top-color: white;
+            border-bottom: 0;
+            border-left: 0;
+            margin-right: -10px;
+            margin-top: -20px;
+        }
+    </style>
+</head>
+
+<body>
+<a class="close" href="/team">❌</a>
+
+<div class="question">
+    <img src="/img/르탄이2.png" alt="르탄이">
+    <p class="rtani">르탄이</p>
+    <p class="q-one">내일배움캠프가 시작됐는데</p>
+    <p class="q-two">KAKA5의 목표는 뭐야? 사소한 거라도 좋아!</p>
+</div>
+
+<div class="answer">
+    <p class="a-one">
+        일단 우리 팀의 목표는 포기하지 않고, 무사히 내일배움캠프를 수료하는거야! <br>
+        한명 한명의 목표를 말하자면...
+    </p>
+    <p class="a-two">
+        지연 : "문제해결 및 의사소통 능력을 향상시키고 싶어" <br>
+        시환 : "남들과 협업하며 의사소통 능력을 늘리고 싶어" <br>
+        휘웅 : "협업 능력 향상 및 백엔드 개발자로서의 실무 능력을 키우고 싶어" <br>
+        도균 : "수 많은 고민 끝에 참여한 만큼 배울 수 있는 건 다 배우고 얻을 수 있는 건 다 얻어서 끝까지 후회없는 캠프가 되자!"
+    </p>
+</div>
+</body>
+
+</html>

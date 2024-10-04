@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAKA5 home</title>
+    <style>
+        body {
+            background-color: #F7E600;
+            overflow: hidden;
+        }
+
+        .talk {
+            width: 200px;
+            height: 120px;
+            border: 1px solid #3A1D1D;
+            background-color: #3A1D1D;
+            position: relative;
+            top: 10px;
+            border-radius: 50%;
+        }
+
+        .talk:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 40%;
+            width: 0;
+            height: 0;
+            border: 20px solid transparent;
+            border-top-color: #3A1D1D;
+            border-bottom: 0;
+            border-left: 0;
+            margin-left: -28px;
+            margin-bottom: -10px;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title {
+            text-align: center;
+            position: relative;
+            bottom: 105px;
+        }
+
+        .title a {
+            text-decoration: none;
+            color: #F7E600;
+            font-size: 47px;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: row;
+
+            position: relative;
+            bottom: 130px;
+        }
+
+        .lion {
+            border-radius: 300px;
+            width: 240px;
+            height: 240px;
+            object-fit: cover;
+            margin: 100px auto auto 145px;
+            border-style: solid;
+            border-color: #3A1D1D;
+            border-width: 5px;
+        }
+
+        .team {
+            background-color: #3A1D1D;
+            color: #F7E600;
+            border-radius: 50px;
+            height: 60px;
+            width: 190px;
+            font-size: 20px;
+            text-align: center;
+            line-height: 50px;
+            margin-left: 170px;
+        }
+
+        .dog {
+            border-radius: 300px;
+            width: 240px;
+            height: 240px;
+            object-fit: cover;
+            margin: 100px auto auto 100px;
+            border-style: solid;
+            border-color: #3A1D1D;
+            border-width: 5px;
+        }
+
+        .member {
+            background-color: #3A1D1D;
+            color: #F7E600;
+            border-radius: 50px;
+            height: 64px;
+            width: 250px;
+            font-size: 20px;
+            text-align: center;
+            line-height: 60px;
+            margin-left: 97px;
+        }
+
+        .cat {
+            border-radius: 300px;
+            width: 240px;
+            height: 240px;
+            object-fit: cover;
+            margin: 100px auto auto 100px;
+            border-style: solid;
+            border-color: #3A1D1D;
+            border-width: 5px;
+        }
+
+        .future {
+            background-color: #3A1D1D;
+            color: #F7E600;
+            border-radius: 50px;
+            height: 60px;
+            width: 200px;
+            font-size: 20px;
+            text-align: center;
+            line-height: 50px;
+            margin-left: 130px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="center">
+    <div class="talk"></div>
+</div>
+
+<h1 class="title">
+    <a href="/home">KAKA5</a>
+</h1>
+
+<div class="menu">
+    <div class="Team">
+        <a href="/team">
+            <img src="data:image/png;base64,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"
+                 class="lion" alt="Team"></a>
+        <div class="team">
+            <h1>Team</h1>
+        </div>
+    </div>
+
+    <div class="Member">
+        <a href="/members">
+            <img src="/img/프로도.png"
+                 class="dog" alt="Members">
+            <div class="member">
+        </a>
+        <h1>Members</h1>
+    </div>
+</div>
+
+<div class="Future">
+    <a href="/future">
+        <img src="https://mblogthumb-phinf.pstatic.net/MjAxNzA2MjVfMTQg/MDAxNDk4Mzg5OTkwOTc5.uwKULjaHAnohfHmjSvIf-vqeis6o0WO6i7SaEhBcz9sg.V57fexTwh7Utg9nQpY_tJBqAFCNsv5BvEx4oa-_hLc4g.PNG.lastmistake/%EB%84%A4%EC%98%A4%EC%96%BC%EA%B5%B42.png?type=w800"
+             class="cat" alt="Future"></a>
+    <div class="future">
+        <h1>Future</h1>
+    </div>
+</div>
+</div>
+</body>
+
+</html>
